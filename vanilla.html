@@ -13,21 +13,26 @@
     <nav>
         <div class="logo">
             <h1>LEE</h1>
+            <h3 class="clock"></h3>
         </div>
         <button class="nameBtn">Click</button>
     </nav>
+    <h1 class="greeting"></h1>
     <section>
         <div class="modal hidden">
             <div class="modal-second">
                 <div class="title">
                     <h1>이름이 무엇입니까?</h1>
                 </div>
-                <form>
-                    <input type="text" />
+                <form class="input-form">
+                    <input type="text" maxlength="15"/><br/><br/>
                 </form>
+                <span></span>
+                
             </div>
         </div>
     </section>
+   
 </body>
 <script src="vanilla.js"></script>
 
