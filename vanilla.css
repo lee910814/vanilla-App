@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    border: 1px solid black;
+}
+.logo{
+    border: 1px solid black;
+}
