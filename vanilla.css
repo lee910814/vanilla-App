@@ -1,42 +1,51 @@
-
 body,html{
     margin: 0;
     padding: 0;
-    background-image: url(img/고양이.jpg);
+}
+
+.container{
     width: 100%;
     height: 100vh;
+    display: block;
+}
+
+/*home화면*/
+#home{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    overflow: hidden; 
+    background-image: url(img/등대.jpg);
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;  
 }
 
-/*인사말*/
-.greeting{
-    color: #000;
-    z-index: 1;
-    color: #fff;
-}
 
 /*navbar*/
 nav{
-    background-color: rgba(0,0,0,0.3);
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
-    height: 100px;
-    margin-top: 0; 
+    height: 80px;
+    position: absolute;
+    top: 0;
 }
 
 /*Lee로고*/
 .logo{
-    font-size: 2rem;
+    font-size: 3rem;
     color: #fff;
     padding: 8px 40px;
     display: block;
 }
+.logo a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/*시계*/
 .clock h3{
     width: 100px;
     height: 30px;
@@ -70,16 +79,9 @@ section{
  align-items: center;
  justify-content: center;
  position: relative;
- top: 30%;
+ /* top: 30%; */
 
 }
-
-모달창
-.modal{
-    width: 280px;
-    height: 180px;
-    border-radius: 25px;  
-} 
 
 /*model form*/
 .modal form{
@@ -88,7 +90,7 @@ section{
     align-items: center;
 }
 
-/*이름 h1*/
+/*이름질문 h1*/
 .modal .title{
     display: flex;
     justify-content: center;
@@ -112,20 +114,20 @@ section{
 
 /*username*/
 .greeting{
+    color: #fff;
     margin-right: 30px;
-    font-size: 200;
-    font-size: 1rem;
+    font-size: 1.5rem;
     display: flex;
-    justify-content: flex-end;
-    margin-top: 40px;
-    
+    justify-content: center;
+   
 }
 
 /*error*/
-span{
+.modal span{
     color:red;
     font-size: 0.5rem;
     margin-left: 40px;
+
 }
 
 /*hidden*/
@@ -133,22 +135,68 @@ span{
     display: none;
 }
 
+
+/*footer*/
 footer{
-   
     width: 100%;
     position: absolute;
     bottom: 0;
     text-align: center;
     color: #ccc;
-    font-size: 0.5rem;
-}
-.quote span{
-    color: #fff;
     font-size: 0.8rem;
-    margin: 0;
-    
-}
-.todo-list ul span:last-child{
-    color: #fff;
 }
 
+/*랜덤 명언*/
+.quote span{
+    color: #fff;
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+/*username입력시*/
+.user-wrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.user{
+    width: 50%;
+}
+
+
+/*todo-list*/
+.todoList{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todolist{
+    width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 0;
+}
+.todo-form input{
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+.todo-list{
+    display: block;
+}
+.todo-list li{
+    list-style: none;
+   padding-right: 20px;
+    margin: 10px;
+}
+.todo-list button{
+    background-color: none;
+    color: red;
+    border: none;
+    padding: 4px 7px;
+    border-radius: 10px;
+    font-weight: 600;
+}
