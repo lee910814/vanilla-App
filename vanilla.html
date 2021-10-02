@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,73 +9,71 @@
 </head>
 
 <body>
-
-    <!--navbar-->
-    <nav>
-
-        <!--로고-->
-        <div class="logo">
-            <dic class="title-logo">
-                <h1>LEE</h1>
-            </dic>
-          
-        </div>
-        <!--사용자이름-->
-        <button class="nameBtn">Click</button>
-
-
-    </nav>
-    <!--end navbar-->
-
-    <h1 class="greeting"></h1>
-    <!--환영인사-->
-
-
-
-    <!--section-->
-    <section>
-
-        <div class="modal hidden">
-            <!--모달창-->
-            <div class="modal-second">
-                <div class="title">
-                    <h1>이름이 무엇입니까?</h1>
+    <div class="container">
+        <section id="home">
+            <!--navbar-->
+            <nav>
+                <!--로고-->
+                <div class="logo">
+                   <a href="#"><h1>LEE</h1></a>
                 </div>
-                <form class="input-form">
-                    <input type="text" maxlength="15" />
-                    <!--사용자 이름 입력(최대 길이 15)-->
-                </form>
-                <span></span>
-                <!--입력안될 시 오류메세지-->
+                <div class="ul">
+                        <button class="nameBtn">Click</button>
+                </div>
+                <!--사용자이름-->
+            </nav>
+            <!--end navbar-->
+          
+            <div class="user-wrap">
+                <div class="user">
+                    <!--모달창-->
+                    <div class="modal hidden">
+                        <div class="modal-second">
+                            <div class="title">
+                                <h1>이름이 무엇입니까?</h1>
+                            </div>
+                            <form class="input-form">
+                                <input type="text" maxlength="15" />
+                                <!--사용자 이름 입력(최대 길이 15)-->
+                            </form>
+                            <span></span>
+                            <!--입력안될 시 오류메세지-->
+                        </div>
+                    </div>
+                    <h1 class="greeting"></h1>
+                    <!--환영인사-->
+                    
+                </div>
+
+                <!--todoList-->
+                <div class="todoList">
+                    <div class="todolist">
+                        <form class="todo-form">
+                            <input type="text" placeholder="할 일을 적어주세요" required maxlength="20"/>
+                        </form>
+                        <ul class="todo-list"></ul>
+                    </div>
+                </div>
             </div>
-        </div>
-        
-    </section>
-    <!--end section-->
 
-    <!--todoList-->
-    <section>
-        <div class="todolist">
-            <form class="todo-form">
-                <input type="text" placeholder="할 일을 적어주세요" required/>
-            </form>
-            <ul class="todo-list"></ul>
-        </div>
-    </section>
 
-    <!--footer-->
-    <footer>
-        <div class="quote">
-            <span></span>
-            <span></span>
-        </div>
-        @2021 Lee euy jeong
-    </footer>
-    <!--end footer-->
-  
+            <!--footer-->
+            <footer>
+                <div class="quote">
+                    <span></span>
+                    <span></span>
+                </div>
+                @2021 Lee euy jeong
+            </footer>
+        </section>
+    </div>
+        <!--home화면은 여기까지-->
+
+
 </body>
 <script src="javascript/vanilla.js"></script>
 <script src="javascript/clock.js"></script>
 <script src="javascript/quote.js"></script>
 <script src="javascript/todoList.js"></script>
+
 </html>
